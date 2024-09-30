@@ -1,0 +1,17 @@
+format = """$directory($style)\
+$git_branch \
+$cmd_duration\
+$character """
+
+[character]
+success_symbol = "[λ  -->](bold #ec31e5)"
+error_symbol = "[Xi -->](bold red)"
+
+[directory]
+truncation_length = 1   # Show only the last director   
+truncation_symbol = ""  # Don't add any symbol before   
+style = "bold green"    # Customize the style as you
+
+[git_branch]
+format = "git:\\([$branch]($style)\\)"
+style = "bold #ff79c6"
