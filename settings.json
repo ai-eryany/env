@@ -1,21 +1,16 @@
 {
-  //////////////////////////////////////////////////////////////
-  //////////////////////////////////////////////////////////////
-  //////////////////////////////////////////////////////////////
-  //////////////////////////////////////////////////////////////
-  //////////////////////////////////////////////////////////////
-  //////////////////////////////////////////////////////////////
-  ///////// Font related
-  "editor.fontSize": 13, 
-  "editor.fontLigatures": true, 
-  "editor.fontWeight": "500",
-  "editor.fontFamily": "'Monoid Nerd Font'",
-  "editor.codeLensFontFamily": "'Monoid Nerd Font'",
-  "editor.inlayHints.fontFamily": "'Monoid Nerd Font'",
-  "editor.inlineSuggest.fontFamily": "'Monoid Nerd Font'",
-  "debug.console.fontFamily": "'Monoid Nerd Font'",
-  "scm.inputFontFamily": "'Monoid Nerd Font'",
-  "terminal.integrated.fontFamily": "'Monoid Nerd Font'",
+  "editor.fontLigatures": true,
+  "editor.fontWeight": "350",
+  "editor.lineHeight": 1.5,
+  "editor.letterSpacing": 0.5,
+  "editor.fontFamily": "'Cascadia Code'",
+  "editor.codeLensFontFamily": "'Cascadia Code'",
+  "editor.inlayHints.fontFamily": "'Cascadia Code'",
+  "editor.inlineSuggest.fontFamily": "'Cascadia Code'",
+  "debug.console.fontFamily": "'Cascadia Code'",
+  "scm.inputFontFamily": "'Cascadia Code'",
+  "terminal.integrated.fontFamily": "'Cascadia Code'",
+  "terminal.integrated.fontLigatures.enabled": true,
   //////////////////////////////////////////////////////////////
   //////////////////////////////////////////////////////////////
   //////////////////////////////////////////////////////////////
@@ -33,13 +28,15 @@
   "search.exclude": {
     "**/.vscode": true,
     "**/*.code-workspace": true,
+    "**/*.d.ts": true,
     "**/dist": true
   },
   "search.quickOpen.includeHistory": false,
   "javascript.preferences.useAliasesForRenames": false,
   "typescript.preferences.useAliasesForRenames": false,
   "editor.quickSuggestions": {
-    "other": "off"
+    "strings": "on",
+    "comments": "on"
   },
   //////////////////////////////////////////////////////////////
   //////////////////////////////////////////////////////////////
@@ -57,29 +54,7 @@
   ///////// Git related
   "git.autofetch": true,
   "git.openRepositoryInParentFolders": "always",
-  //////////////////////////////////////////////////////////////
-  //////////////////////////////////////////////////////////////
-  //////////////////////////////////////////////////////////////
-  //////////////////////////////////////////////////////////////
-  //////////////////////////////////////////////////////////////
-  //////////////////////////////////////////////////////////////
-
-  //////////////////////////////////////////////////////////////
-  //////////////////////////////////////////////////////////////
-  //////////////////////////////////////////////////////////////
-  //////////////////////////////////////////////////////////////
-  //////////////////////////////////////////////////////////////
-  //////////////////////////////////////////////////////////////
-  ///////// Plugins related
-  "vim.vimrc.enable": true,
-  "advancedNewFile.exclude": {
-    "node_modules": true,
-    "node_modules_electron": true,
-    "dev": true,
-    "dist": true
-  },
-  "advancedNewFile.showInformationMessages": true,
-  "advancedNewFile.convenienceOptions": ["last", "current", "root"],
+  "files.exclude": {},
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   //////////////////////////////////////////////////////////////
   //////////////////////////////////////////////////////////////
@@ -98,13 +73,10 @@
   "window.customTitleBarVisibility": "windowed",
   "window.commandCenter": false,
   "window.zoomLevel": 1,
-  "editor.minimap.enabled": false,
   "editor.folding": false,
-  "editor.guides.indentation": false,
   "editor.colorDecorators": false,
   "editor.stickyScroll.enabled": false,
   "editor.lineNumbers": "relative",
-  "editor.cursorStyle": "block",
   "editor.stickyScroll.scrollWithEditor": false,
   "workbench.layoutControl.enabled": false,
   "workbench.activityBar.location": "top",
@@ -112,16 +84,67 @@
   "workbench.startupEditor": "none",
   "editor.mouseWheelZoom": true,
   "terminal.integrated.defaultProfile.windows": "Git Bash",
-  "files.exclude": {
-    "**/dist": true,
-    "**/node_modules": true
-  },
   "debug.console.wordWrap": false,
-  "markdown.preview.breaks": true
+  "markdown.preview.breaks": true,
+  "vim.vimrc.enable": true,
+  "workbench.productIconTheme": "fluent-icons",
+  "editor.formatOnSave": true,
+  "editor.guides.bracketPairs": false,
+  "editor.tabSize": 2,
+  "workbench.colorCustomizations": {
+    "editor.lineHighlightBorder": "#690072",
+    "editorBracketMatch.border": "#00000000", // this disables the border
+    "editorBracketMatch.background": "#00000000",
+    "editor.lineHighlightBackground": "#250029",
+    // "editor.background": "#000",
+    "editorCursor.foreground": "#cf00e0"
+    // "statusBar.background": "#000",
+    // "sideBar.background": "#000",
+    // "editorGutter.background": "#000",
+    // "quickInput.background": "#000",
+    // "editorGroupHeader.tabsBackground": "#000",
+    // "tab.inactiveBackground": "#000",
+    // "terminal.background": "#000",
+    // "editorSuggestWidget.background": "#000",
+    // "list.activeSelectionBackground": "#011119"
+  },
   //////////////////////////////////////////////////////////////
   //////////////////////////////////////////////////////////////
   //////////////////////////////////////////////////////////////
   //////////////////////////////////////////////////////////////
   //////////////////////////////////////////////////////////////
   //////////////////////////////////////////////////////////////
+  // Extension related
+
+  //////////////////////////////////////////////////////////////
+  //////////////////////////////////////////////////////////////
+  //////////////////////////////////////////////////////////////
+  //////////////////////////////////////////////////////////////
+  //////////////////////////////////////////////////////////////
+  //////////////////////////////////////////////////////////////
+  // General
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "testing.gutterEnabled": false,
+  "scm.diffDecorationsGutterAction": "none",
+  "scm.diffDecorationsGutterWidth": 1,
+  "diffEditor.renderGutterMenu": false,
+  "workbench.editor.showTabs": "single",
+  "redhat.telemetry.enabled": false,
+  "editor.minimap.enabled": false,
+  "github.copilot.nextEditSuggestions.enabled": false,
+  "explorer.compactFolders": false,
+  "terminal.integrated.tabs.enabled": false,
+  "remote.SSH.remotePlatform": {
+    "57.129.77.235": "linux"
+  },
+  "workbench.sideBar.location": "right",
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+    "javascriptreact": false
+  },
+  "editor.cursorStyle": "block",
+  "workbench.colorTheme": "Shades of Purple (Super Dark)"
 }
